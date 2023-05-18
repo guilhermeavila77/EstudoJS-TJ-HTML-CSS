@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(9, 18, 68);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Red Hat Mono', monospace;
+    color: whitesmoke;
+
+}
+
+.kanban-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: sans-serif;
+}
+
+.kanban-heading-text {
+    font-size: 1.8rem;
+    background-color: rgba(255, 255, 0, 0.788);
+    padding: 0.8rem 1.7rem;
+    border-radius: 0.5rem;
+    margin: 1rem;
+}
+
+.kanban-board {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: sans-serif;
+}
+
+.kanban-block {
+    padding: 0.6rem;
+    width: 30.5%;
+    min-width: 14rem;
+    min-height: 4.5rem;
+    border-radius: 0.3rem;
+}
+
+#todo {
+    background-color: #fec6d183;
+    border: 2px solid grey;
+}
+
+#inprogress {
+    background-color: rgba(255, 255, 0, 0.699);
+    border: 2px solid grey;
+}
+
+#recusado {
+    background-color: rgba(255, 0, 0, 0.87);
+    border: 2px solid grey;
+}
+
+#done {
+    background-color: rgba(0, 128, 0, 0.884);
+    border: 2px solid grey;
+}
+
+.task {
+    background-color: grey;
+    margin: 0.2rem 0rem 0.3rem 0rem;
+    border: 0.1rem solid black;
+    border-radius: 0.2rem;
+    padding: 0.5rem 0.2rem 0.5rem 2rem;
+}
+
+#task-button {
+    margin: 0.2rem 0rem 0.1rem 0rem;
+    background-color: white;
+    border-radius: 0.2rem;
+    width: 100%;
+    border: 0.25rem solid black;
+    padding: 0.5rem 2.7rem;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+}

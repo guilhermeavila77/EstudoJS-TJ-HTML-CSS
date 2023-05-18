@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>GERENCIADOR DE TAREFA</title>
+</head>
+<body>
+    <div class="container">
+        <div class="kanban-heading">
+            <strong class="kanban-heading-text">GERENCIADOR DE TAREFA</strong>
+        </div>
+        <div class="kanban-board">
+            <div class="kanban-block" id="todo" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <strong>ENVIAR PARA ANALISE</strong>
+                <div class="task" id="task1" draggable="true" ondragstart="drag(event)">
+                    <span>Task 1</span>
+                </div>
+            </div>
+            <div class="kanban-block" id="inprogress" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <strong>EM ANALISE</strong>
+            </div>
+            <div class="kanban-block" id="recusado" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <strong>REPROVADO</strong>
+            </div>
+            <div class="kanban-block" id="done" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <strong>APROVADO</strong>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
