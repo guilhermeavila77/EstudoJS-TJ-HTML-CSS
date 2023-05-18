@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&family=Square+Peg&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background-color: #fcc5e2;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 52px;
+}
+
+.logo {
+    height: 200px;
+    width: auto;
+    padding-bottom: 52px;
+
+}
+
+.perfil {
+    height: 150px;
+    width: auto;
+    border-radius: 100px;
+    border: 5px solid #0b1d6f;
+}
+
+.nome {
+    font-family: 'Square Peg', cursive;
+    font-size: 50px;
+    font-weight: 400;
+    color: #0b1d6f;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 52px;
+}
+
+.title {
+    font-family: 'Orelega One', cursive;
+    font-weight: 10;
+    color: #fcc5e2;
+    padding: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+    border: 5px solid #0b1d6f;
+    background-color: #0b1d6f;
+}
+
+.slideshow-container {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.mySlide {
+    display: none;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.ntexto {
+    color: white;
+    font-size: 12px;
+    padding: 12px 12px;
+    position: absolute;
+    top: 0;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top: 5px solid #0b1d6f;
+    border-bottom: 5px solid #0b1d6f;
+    padding: 32px;
+}
+
+.info-text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: 'Orelega One', cursive;
+    font-size: 20px;
+    color: white;
+}
+
+.link {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.fa {
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.fa-whatsapp {
+    background: #0b1d6f;
+    color: white;
+}
+
+.fa-instagram {
+    background: #0b1d6f;
+    color: white;
+}
+
+.more{
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    gap: 15px;
+    align-items: center;
+}
+
+.botton{
+    background-color: #0b1d6f;
+    border: none;
+    padding: 5px 40px;
+    border-radius: 5px;
+    font-family: 'Orelega One', cursive;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.botton:hover{
+    background-color: white;
+    color: #0b1d6f;
+    letter-spacing: 2px;
+}
+
+.rodape{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 32px 32px;
+    justify-content: center;
+}
+
+.preco{
+    width: auto;
+    height: 400px;
+}
